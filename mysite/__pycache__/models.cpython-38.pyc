@@ -1,0 +1,11 @@
+B
+
+��^��@s.ddlmZddlmZGdd�dej�ZdS)�)�models)�gettext_lazyc@sHeZdZejed�dd�Zejed�ddd�ZGdd�d�Z	d	d
+�Z
+dS)�BookmarkZTitle��)�
+max_length�DateT)�blank�nullc@seZdZed�Zed�ZdS)z
+Bookmark.MetarZ	BookmarksN)�__name__�
+__module__�__qualname__�_�verbose_name�verbose_name_plural�rr�4D:\Mayank\Mayank\mysite\mysite\models.py�MetasrcCs|jS)N)�title)�selfrrr�__str__szBookmark.__str__N)r
+rrr�	CharFieldr
+r�	DateField�daterrrrrrrsrN)�	django.dbr�django.utils.translationrr
+�Modelrrrrr�<module>s
