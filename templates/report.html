@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block title %}Report generation{% endblock %}
+{% block content %}
+  <form method="post" action="/report/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Generate report</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block title %}Report Generated successfully{% endblock %}
+{% block content %}
+  <div class = "row">
+{% for d in data %}
+	<div class="col-md-4">
+        <div class="box-item">
+            <div class="content">
+                <h1 style="font-color:white; color:white; ">{{d.title}}</h1>
+                <h3 style="font-color:white; color:white; ">{{d.date}}</h3>
+                <h4 style="font-color:white; color:#816943; ">{{d.url}}</h4>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <hr/>
+{% endfor %} 
+</div>
+{% endblock %}

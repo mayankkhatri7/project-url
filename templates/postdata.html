@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}Enquiry{% endblock %}
+
+{% block content %}
+
+<form name="form1" method="post" action="/postdata/">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+            <input type="text" class="form-control input-lg" name="title" id="title" placeholder="Enter title" required="required" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <textarea name="url" id="url" class="form-control" rows="4" cols="25" required="required"
+                placeholder="Enter URL" style="height: 200px;"></textarea>
+            </div>						
+            <button type="submit" class="btn btn-skin btn-block" name="submitbookmark" id="submitbookmark">Submit</button>
+        </div>
+    </div>
+</form>
+{% endblock %}
